@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ATMA JYOTI Yoga Retreat & Sound Healing Center - Spiritual courses, yoga training, sound healing in Pokhara, Nepal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="index.html">
+    <meta name="theme-color" content="#2d5016">
+    <meta property="og:title" content="ATMA JYOTI Yoga Retreat & Sound Healing - Home">
+    <meta property="og:description" content="ATMA JYOTI Yoga Retreat & Sound Healing Center - Spiritual courses, yoga training, sound healing in Pokhara, Nepal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/images/hero-1.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ATMA JYOTI Yoga Retreat & Sound Healing - Home">
+    <meta name="twitter:description" content="ATMA JYOTI Yoga Retreat & Sound Healing Center - Spiritual courses, yoga training, sound healing in Pokhara, Nepal">
+    <meta name="twitter:image" content="assets/images/hero-1.png">
+    <title>ATMA JYOTI Yoga Retreat & Sound Healing - Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar sticky">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-circle"><img src="assets/images/yoga-class.png" alt="Yoga & Sound Healing"></div>
+                <span class="logo-text">Atma Jyoti Yoga Retreat & Sound Healing Centre</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="sound-bowl.html" class="nav-link">Sound Bowl</a></li>
+                <li><a href="yoga.html" class="nav-link">Yoga Teacher Training</a></li>
+                <li><a href="retreats.html" class="nav-link">Retreats</a></li>
+                <li><a href="courses.html" class="nav-link">Other Courses</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+<style>
+/* ===== FLYER POPUP STYLES ===== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        /* Popup Overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 999999;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Popup Container */
+        .popup-container {
+            position: relative;
+            max-width: 90%;
+            max-height: 90vh;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            animation: popupFadeIn 0.3s ease-out;
+        }
+
+        @keyframes popupFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            width: 44px;
+            height: 44px;
+            background: #fff;
+            border: 2px solid #e0e0e0;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 26px;
+            line-height: 1;
+            color: #333;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            z-index: 1000000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            font-weight: 300;
+        }
+
+        .close-btn:hover {
+            background: #f5f5f5;
+            transform: scale(1.1);
+            border-color: #ccc;
+        }
+
+        .close-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Popup Image */
+        .popup-image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .popup-container {
+                max-width: 95%;
+                border-radius: 8px;
+            }
+
+            .popup-image {
+                border-radius: 8px;
+            }
+
+            .close-btn {
+                top: -10px;
+                right: -10px;
+                width: 38px;
+                height: 38px;
+                font-size: 22px;
+            }
+
+            .popup-overlay.active {
+                padding: 15px;
+            }
+        }
+
+        /* Desktop Adjustments */
+        @media (min-width: 769px) {
+            .popup-container {
+                max-width: 650px;
+            }
+        }
+
+        /* Tablet Adjustments */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .popup-container {
+                max-width: 550px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- YOUR EXISTING WEBSITE CONTENT GOES HERE -->
+    <!-- Everything you already have in your index.html -->
+
+
+
+    <!-- Popup System - Add this before closing </body> tag -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-container">
+            <button class="close-btn" id="closeBtn" aria-label="Close popup">&times;</button>
+            <img src="" alt="Special Offer" class="popup-image" id="popupImage">
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+            
+            const STORAGE_KEY = 'popupsShown';
+            const popupImages = ['assets/images/popupimage1.jpg', 'assets/images/popupimage2.jpg'];
+            
+            const overlay = document.getElementById('popupOverlay');
+            const popupImage = document.getElementById('popupImage');
+            const closeBtn = document.getElementById('closeBtn');
+            
+            let currentPopupIndex = 0;
+
+            function hasSeenPopups() {
+                try {
+                    return localStorage.getItem(STORAGE_KEY) === 'true';
+                } catch (e) {
+                    return false;
+                }
+            }
+
+            function markPopupsAsSeen() {
+                try {
+                    localStorage.setItem(STORAGE_KEY, 'true');
+                } catch (e) {
+                    console.warn('localStorage not available');
+                }
+            }
+
+            function showPopup(imageIndex) {
+                if (imageIndex >= popupImages.length) {
+                    markPopupsAsSeen();
+                    return;
+                }
+
+                currentPopupIndex = imageIndex;
+                popupImage.src = popupImages[imageIndex];
+                popupImage.alt = 'Popup ' + (imageIndex + 1);
+                overlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closePopup() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+                
+                currentPopupIndex++;
+                if (currentPopupIndex < popupImages.length) {
+                    setTimeout(() => showPopup(currentPopupIndex), 400);
+                } else {
+                    markPopupsAsSeen();
+                }
+            }
+
+            closeBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                closePopup();
+            });
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) {
+                    closePopup();
+                }
+            });
+
+            document.querySelector('.popup-container').addEventListener('click', function(e) {
+                e.stopPropagation();
+            });
+
+            if ('addEventListener' in window) {
+                window.addEventListener('load', function() {
+                    if (!hasSeenPopups()) {
+                        setTimeout(() => showPopup(0), 100);
+                    }
+                });
+            }
+        })();
+    </script>
+
+    <!-- Hero Section with Auto-Sliding Carousel -->
+    <section class="hero">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide fade">
+                    <img src="assets/images/IMG-20250915-WA0026.jpg" alt="Yoga & Sound Healing">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.23 PM.jpeg" alt="Sound Bowls & Healing">
+                </div>
+                <div class="carousel-slide fade">
+                    <img src="assets/images/IMG_0043_ARW.jpg" alt="Ayurveda & Wellness">
+                </div>
+                <div class="carousel-controls">
+                    <span class="prev" onclick="changeSlide(-1)">&#10094;</span>
+                    <span class="next" onclick="changeSlide(1)">&#10095;</span>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            <div class="hero-overlay">
+                <h1>ATMA JYOTI</h1>
+                <p>Yoga Retreat & Sound Healing Centre</p>
+                <p class="hero-subtitle">Pokhara, Nepal - Spiritual Awakening Awaits</p>
+                <a href="https://wa.me/9779860560395?text=Hello%20ATMA%20JYOTI,%20I%20am%20interested%20in%20your%20services" class="cta-btn" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Book Enquiry / WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- One-time Modal Popup (shows PDF on first visit only) -->
+    <!-- <div id="welcomeModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <embed src="popup1.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+    </div> -->
+
+    <!-- Main Topics Highlight Section -->
+    <section id="home-highlights" class="container" style="padding: 3rem 0 5rem;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2 style="font-size: 2.5rem; color: #2d5016; margin-bottom: 1rem;">Our Main Programs</h2>
+            <p style="font-size: 1.1rem; color: #666;">Three transformative pathways to healing and awakening</p>
+        </div>
+        <div class="cards-grid">
+            <div class="card" style="border: 3px solid #2d5016;">
+                <h2 id="yoga-teacher" style="color: #2d5016;">🧘 Yoga Teacher Training</h2>
+                <p>Internationally accredited 200 & 300-hour Yoga Teacher Training in the heart of Pokhara. Deep curriculum combining asana, pranayama, meditation, anatomy and teaching methodology. Led by expert teachers from India and Nepal.</p>
+                <a href="#yoga-teacher-training" class="btn btn-primary">Explore YTTC</a>
+            </div>
+
+            <div class="card" style="border: 3px solid #2d5016;">
+                <h2 id="sound-bowl" style="color: #2d5016;">🎵 Himalayan Sound Bowl</h2>
+                <p>Experience the transformative vibrational therapy of Himalayan singing bowls. Short courses and professional certifications available. Unique integration with yoga and healing practices for complete wellness.</p>
+                <a href="sound-bowl.html" class="btn btn-primary">Sound Bowl Details</a>
+            </div>
+
+            <div class="card" style="border: 3px solid #2d5016;">
+                <h2 id="reiki" style="color: #2d5016;">💫 Reiki Healing</h2>
+                <p>Usui lineage Reiki Level I & II training for personal growth and professional practice. Join our attunements and become a certified practitioner in this universal healing energy practice.</p>
+                <a href="reiki.html" class="btn btn-primary">Reiki Training</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Sessions Highlights -->
+    <section class="free-sessions-highlight">
+        <div class="container">
+            <h2>Free Sessions & Classes</h2>
+            <div class="sessions-grid">
+                <div class="session-card">
+                    <div class="session-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Himalayan Sound Bowl Healing</h3>
+                    <p><strong>Daily</strong> | 9:30–10:30 AM & 3:00–4:00 PM</p>
+                    <p class="donation">On Donation Basis</p>
+                </div>
+                <div class="session-card">
+                    <div class="session-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Kirtan Chanting</h3>
+                    <p><strong>Tues, Thurs & Sun</strong> | 6:00–7:30 PM</p>
+                    <p class="donation">On Donation Basis</p>
+                </div>
+                <div class="session-card">
+                    <div class="session-icon">
+                        <i class="fas fa-person-walking"></i>
+                    </div>
+                    <h3>Drop-in Yoga Sessions</h3>
+                    <p><strong>Daily</strong> | 7:00–8:30 AM & 4:00–5:30 PM</p>
+                    <p class="donation">On Donation Basis</p>
+                </div>
+            </div>
+            <div class="cta-section">
+                <p>Want to explore deeper? Join our professional courses!</p>
+                <a href="courses.html" class="btn btn-primary">Explore All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Intro - Brief Version -->
+    <section class="about-intro">
+        <div class="container">
+            <h2>Welcome to ATMA JYOTI</h2>
+            <p>Located in the serene hills of Pokhara, Nepal, our center offers a sanctuary for spiritual growth, wellness, and self-discovery through authentic teaching, holistic programs, and transformative healing practices.</p>
+            <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- Yoga Teacher Training (inserted from yoga.html) -->
+    <section id="yoga-teacher-training" class="page-header" style="margin-top:60px;">
+        <div class="container">
+            <h1>Yoga Alliance Certified 200-Hour &amp; 300-Hour YTTC</h1>
+            <p>Atma Jyoti Yoga Retreat &amp; Sound Healing Center — Pokhara, Nepal</p>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <h2>Yoga Alliance Certified 200-Hour &amp; 300-Hour Teacher Training</h2>
+            <p><strong>Atma Jyoti Yoga Retreat &amp; Sound Healing Center</strong></p>
+            <p>Join our internationally accredited 200-hour and 300-hour Yoga Teacher Training Courses (YTTC) at Atma Jyoti Yoga Retreat and Sound Healing Center in the heart of Pokhara, Nepal—a serene sanctuary near the Himalayas. These immersive trainings are Yoga Alliance certified, offering students a solid foundation or advanced mastery in both practical yoga and theoretical knowledge.</p>
+
+            <p>Led by a team of highly experienced yoga teachers from India and Nepal, our programs go far beyond asana practice. Each course is a holistic journey into the depth of yoga philosophy, functional anatomy, professional teaching skills, and conscious living.</p>
+
+            <h3 style="margin-top:1.5rem;">Why Choose Atma Jyoti Yoga Teacher Training?</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✅ <strong>Yoga Alliance USA Certification</strong> – Earn your internationally recognized certificate upon completion of either the 200-hour or 300-hour training.</li>
+                <li>✅ <strong>Expert Teachers from India, Nepal &amp; Europe</strong> – Traditional knowledge meets modern insight through our diverse and seasoned faculty.</li>
+                <li>✅ <strong>Balanced Curriculum</strong> – In-depth training in asana, pranayama, meditation, alignment, sequencing, and adjustments, supported by detailed modules in yoga anatomy, yoga philosophy, teaching methodology and professional ethics.</li>
+                <li>✅ <strong>Professional Development</strong> – Learn how to teach, build your career, and ethically share yoga worldwide.</li>
+                <li>✅ <strong>Ayurveda Nutrition &amp; Holistic Wellness</strong> – Discover the sister science of yoga with guidance on Ayurvedic health, nutrition, and lifestyle to support a yogic life.</li>
+                <li>✅ <strong>Sound Healing Integration</strong> – Unique to our school, experience the healing power of Himalayan sound bowls and vibrational therapy as part of your inner and outer transformation.</li>
+            </ul>
+
+            <h3 style="margin-top:1.5rem;">Our Courses</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✦ <strong>200-Hour Yoga Teacher Training</strong> — Perfect for beginners and aspiring teachers, this foundational course will establish your personal practice and prepare you to teach yoga safely and effectively anywhere in the world.</li>
+                <li>✦ <strong>300-Hour Advanced Yoga Teacher Training</strong> — Designed for those who have completed a 200-hour training, our 300-hour course offers deeper insights into yoga philosophy, therapeutic application, subtle body studies, and advanced sequencing, refining your skills as a confident and knowledgeable teacher.</li>
+            </ul>
+
+            <p style="margin-top:1.5rem;">Find your center. Embody the path. Guide the journey</p>
+            <p>For dates, fees, and enrollment please <a href="contact.html?inquiry=yttc">contact us</a> or use the WhatsApp enquiry button.</p>
+            <a href="contact.html?inquiry=yttc" class="btn btn-primary">Enquire / Enrol</a>
+        </div>
+    </section>
+
+    <!-- Himalayan Sound Bowl Healing Section -->
+    <section id="sound-bowl-training" class="page-header" style="margin-top:60px;">
+        <div class="container">
+            <h1>Himalayan Sound Bowl Healing Courses</h1>
+            <p>Atma Jyoti Yoga Retreat &amp; Sound Healing Center — Pokhara, Nepal</p>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <h2>Himalayan Sound Bowl Healing Courses</h2>
+            <p><strong>Atma Jyoti Yoga Retreat &amp; Sound Healing Center</strong></p>
+            <p>Discover the transformative power of sound at Atma Jyoti Yoga Retreat &amp; Sound Healing Center, nestled in the serene landscape of Pokhara. Our structured sound bowl courses offer a clear path from foundational practice to professional therapy, set against the backdrop of the Himalayas.</p>
+
+            <h3 style="margin-top:1.5rem;">Why Choose Atma Jyoti for Sound Bowl Healing Training?</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✅ <strong>Authentic Lineage-Based Curriculum</strong> — Grounded in traditional Himalayan and shamanic vibrational principles, our teaching connects ancient wisdom with practical, therapeutic application.</li>
+                <li>✅ <strong>Expert Guidance</strong> — Learn directly from Mahendra Mahat, whose depth of knowledge springs from a lifetime immersed in healing arts, supported by a skilled team of practitioners.</li>
+                <li>✅ <strong>Hands-On, Practical Learning</strong> — Move beyond theory through extensive practice with genuine, hand-hammered singing bowls. Develop confidence in playing techniques and session facilitation.</li>
+                <li>✅ <strong>Professional Certification</strong> — Graduate with a recognized certificate, equipping you to integrate sound healing into your wellness practice or to offer standalone sound therapy sessions.</li>
+            </ul>
+
+            <h3 style="margin-top:1.5rem;">Our Sound Bowl Courses</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✦ <strong>Sound Bowl Healing Practitioner Certification</strong> — Ideal for beginners and wellness practitioners; establishes core skills in playing Himalayan singing bowls and guiding basic sound healing sessions.</li>
+                <li>✦ <strong>Sound Bowl Healing Teacher Certification</strong> — Designed for certified practitioners, this advanced program focuses on therapeutic protocols and teaching methodology.</li>
+            </ul>
+
+            <p style="margin-top:1.5rem;">Deepen your practice. Heal through sound. Share the vibration.</p>
+            <p>For dates, fees, and enrollment please <a href="contact.html?inquiry=sound">contact us</a> or use the WhatsApp enquiry button.</p>
+            <a href="contact.html?inquiry=sound" class="btn btn-primary">Enquire About Sound Courses</a>
+        </div>
+    </section>
+
+    <!-- Reiki Energy Healing Section -->
+    <section id="reiki-training" class="page-header" style="margin-top:60px;">
+        <div class="container">
+            <h1>Reiki Energy Healing Certification</h1>
+            <p>Atma Jyoti Yoga Retreat &amp; Sound Healing Center — Pokhara, Nepal</p>
+        </div>
+    </section>
+
+    <section class="about-intro">
+        <div class="container">
+            <h2>Reiki Energy Healing Certification</h2>
+            <p><strong>Atma Jyoti Yoga Retreat &amp; Sound Healing Center</strong></p>
+            <p>Discover the gentle, transformative power of Reiki at Atma Jyoti Yoga Retreat &amp; Sound Healing Center, nestled in the serene landscape of Pokhara. Our structured Reiki courses provide a clear and authentic pathway from personal practice to professional energy work.</p>
+
+            <h3 style="margin-top:1.5rem;">Why Choose Atma Jyoti for Reiki Training?</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✅ <strong>Authentic Lineage and Methodology</strong> — Our Reiki teachings honor traditional Usui principles, ensuring you receive pure and effective training in energy channeling and healing.</li>
+                <li>✅ <strong>Expert, Heart-Centered Guidance</strong> — Learn from attuned Reiki Masters who combine deep traditional knowledge with compassionate teaching, supporting your growth in a nurturing environment.</li>
+                <li>✅ <strong>Practical, Experiential Learning</strong> — Move beyond theory through hands-on practice and guided sessions. Develop confidence in channeling and applying universal life-force energy.</li>
+                <li>✅ <strong>Professional Certification</strong> — Graduate with a recognized Reiki certification, empowering you to practice professionally or integrate Reiki into your existing wellness offerings.</li>
+            </ul>
+
+            <h3 style="margin-top:1.5rem;">Our Reiki Courses</h3>
+            <ul style="text-align:left; line-height:1.8;">
+                <li>✦ <strong>Reiki Level I Practitioner Certification</strong> — Ideal for beginners and wellness seekers, this course provides foundational training to practice Reiki for self-healing and supporting loved ones.</li>
+                <li>✦ <strong>Reiki Level II Practitioner Certification</strong> — Designed for those who have completed Level I, this course advances your practice with sacred symbols and distant healing techniques for professional sessions.</li>
+            </ul>
+
+            <p style="margin-top:1.5rem;">Awaken your healing touch. Channel universal energy. Share the light within.</p>
+            <p>For course dates, fees, and enrollment please <a href="contact.html?inquiry=reiki">contact us</a> or use the WhatsApp enquiry button.</p>
+            <a href="contact.html?inquiry=reiki" class="btn btn-primary">Enquire About Reiki</a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9779860560395?text=Hello%20ATMA%20JYOTI,%20I%20am%20interested%20in%20your%20services" target="_blank" class="whatsapp-btn" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Social Media Links on Left -->
+    <div class="social-sidebar">
+        <a href="https://www.facebook.com/mahendrayogic/" target="_blank" class="social-link" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/atmajyotiyogapokhara/?hl=en" target="_blank" class="social-link" title="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Gallery Section - Showcasing 80% of Images -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2>ATMA JYOTI Gallery</h2>
+            <p class="section-subtitle">Moments from our retreat center and programs</p>
+            
+            <div class="gallery-grid">
+                <!-- Yoga Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/Yoga-website.png" alt="Yoga practice at ATMA JYOTI">
+                    <div class="gallery-overlay">Yoga Training</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/mah_yoga1.jpg" alt="Yoga instruction">
+                    <div class="gallery-overlay">Asana Practice</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/Mah_yoga 2.jpg" alt="Advanced yoga session">
+                    <div class="gallery-overlay">Teacher Guidance</div>
+                </div>
+
+                <!-- Sound Bowl Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/Sound Bowl_website.png" alt="Himalayan sound bowls">
+                    <div class="gallery-overlay">Sound Healing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/singing-bowl-4892202_1920.jpg" alt="Singing bowl therapy">
+                    <div class="gallery-overlay">Vibrational Healing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/sound-healing.png" alt="Sound therapy session">
+                    <div class="gallery-overlay">Resonance</div>
+                </div>
+
+                <!-- Reiki Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/Reiki_website (1).png" alt="Reiki healing hands">
+                    <div class="gallery-overlay">Reiki Energy</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/reiki.jpg" alt="Reiki attunement">
+                    <div class="gallery-overlay">Universal Energy</div>
+                </div>
+
+                <!-- Retreat & Center Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/retreat-1.png" alt="Retreat center view">
+                    <div class="gallery-overlay">Our Sanctuary</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/retreat-2.png" alt="Retreat accommodation">
+                    <div class="gallery-overlay">Serene Setting</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/daily activities.png" alt="Daily activities">
+                    <div class="gallery-overlay">Daily Program</div>
+                </div>
+
+                <!-- Spiritual Artifacts -->
+                <div class="gallery-item">
+                    <img src="assets/images/bell & dorje.webp" alt="Tibetan bell and dorje">
+                    <div class="gallery-overlay">Sacred Tools</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/bodhichitta_mala.jpg" alt="Meditation mala">
+                    <div class="gallery-overlay">Prayer Beads</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/seed syllables.jpg" alt="Sacred syllables">
+                    <div class="gallery-overlay">Mantra</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/tingsa.jpg" alt="Tibetan tingsha cymbals">
+                    <div class="gallery-overlay">Sacred Sound</div>
+                </div>
+
+                <!-- Program Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/kirtan.jpg" alt="Kirtan chanting">
+                    <div class="gallery-overlay">Kirtan Sessions</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/kritan.png" alt="Group chanting">
+                    <div class="gallery-overlay">Devotional Singing</div>
+                </div>
+
+                <!-- Nature & Landscape -->
+                <div class="gallery-item">
+                    <img src="assets/images/hero-1.png" alt="Mountain landscape">
+                    <div class="gallery-overlay">Himalayan Views</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/hero-2.png" alt="Retreat scenery">
+                    <div class="gallery-overlay">Natural Beauty</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/hero-3.png" alt="Spiritual landscape">
+                    <div class="gallery-overlay">Sacred Space</div>
+                </div>
+
+                <!-- Course Related Images -->
+                <div class="gallery-item">
+                    <img src="assets/images/course-yoga.png" alt="Yoga course">
+                    <div class="gallery-overlay">Yoga Training</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/course-sound-healing.png" alt="Sound healing course">
+                    <div class="gallery-overlay">Sound Courses</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/course-reiki.png" alt="Reiki certification">
+                    <div class="gallery-overlay">Reiki Programs</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/course-ayurveda.png" alt="Ayurveda training">
+                    <div class="gallery-overlay">Ayurvedic Wellness</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/course-massage.png" alt="Massage therapy">
+                    <div class="gallery-overlay">Healing Touch</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/course-astrology.png" alt="Vedic astrology">
+                    <div class="gallery-overlay">Cosmic Wisdom</div>
+                </div>
+
+                <!-- Photo Moments -->
+                <div class="gallery-item">
+                    <img src="assets/images/20250523_112142.jpg" alt="Retreat moment 1">
+                    <div class="gallery-overlay">Community</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/20250523_114851.jpg" alt="Retreat moment 2">
+                    <div class="gallery-overlay">Fellowship</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/20250523_152904.jpg" alt="Retreat moment 3">
+                    <div class="gallery-overlay">Togetherness</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/20250523_153200.jpg" alt="Retreat moment 4">
+                    <div class="gallery-overlay">Spiritual Growth</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/20250523_161727.jpg" alt="Evening at center">
+                    <div class="gallery-overlay">Tranquility</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG_0043_ARW.jpg" alt="Meditation space">
+                    <div class="gallery-overlay">Inner Peace</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG_0047_ARW.JPG" alt="Sacred space">
+                    <div class="gallery-overlay">Sanctuary</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG_0053.jpg" alt="Center details">
+                    <div class="gallery-overlay">Design</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG_0055.jpg" alt="Architecture">
+                    <div class="gallery-overlay">Structure</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG_0074_ARW.jpg" alt="Artistic detail">
+                    <div class="gallery-overlay">Art</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG-20241223-WA0006.jpg" alt="Guest experience">
+                    <div class="gallery-overlay">Experience</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG-20250915-WA0002.jpg" alt="Retreat activity">
+                    <div class="gallery-overlay">Activities</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG-20250915-WA0011.jpg" alt="Gathering">
+                    <div class="gallery-overlay">Group</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG-20250915-WA0016.jpg" alt="Learning moment">
+                    <div class="gallery-overlay">Teaching</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/IMG-20250915-WA0026.jpg" alt="Celebration">
+                    <div class="gallery-overlay">Joy</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.16 PM.jpeg" alt="Guest photo 1">
+                    <div class="gallery-overlay">Guests</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.17 PM.jpeg" alt="Guest photo 2">
+                    <div class="gallery-overlay">Testimonial</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.22 PM.jpeg" alt="Guest photo 3">
+                    <div class="gallery-overlay">Smile</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.23 PM.jpeg" alt="Guest photo 4">
+                    <div class="gallery-overlay">Connection</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.25 PM.jpeg" alt="Guest photo 5">
+                    <div class="gallery-overlay">Healing</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.26 PM.jpeg" alt="Guest photo 6">
+                    <div class="gallery-overlay">Harmony</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.27 PM.jpeg" alt="Guest photo 7">
+                    <div class="gallery-overlay">Family</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.28 PM.jpeg" alt="Guest photo 8">
+                    <div class="gallery-overlay">Wisdom</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.29 PM.jpeg" alt="Guest photo 9">
+                    <div class="gallery-overlay">Gratitude</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/WhatsApp Image 2026-01-25 at 10.13.50 PM.jpeg" alt="Group moment">
+                    <div class="gallery-overlay">Unity</div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ATMA JYOTI Section -->
+    <section class="why-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why ATMA JYOTI Yoga Retreat & Sound Healing Centre?</h2>
+                <p class="tagline">"Give your life some new energy."</p>
+                <h3>What Makes ATMA JYOTI Yoga Retreat & Sound Healing Centre Special?</h3>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gopuram"></i>
+                    </div>
+                    <h4>Authentic Ashram-Style Environment</h4>
+                    <p>We operate on the traditional principles of an ashram. Learners become part of a teacher-student family, with a disciplined daily schedule, yogic lifestyle, regular practice, simplicity, and service.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h4>Beautiful Natural Setting</h4>
+                    <p>Nestled in nature in the Annapurna region near Pokhara, with views of mountains, forest, hills, and Fewa Lake. Peaceful, quiet location away from city hustle, which aids meditation, reflection, and rest.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h4>Comprehensive Holistic Program</h4>
+                    <p>We offer more than just yoga postures: meditation, pranayama (breathing practices), mantra & kirtan chanting, purification (Shatkarmas), and sound healing. Attention to emotional, spiritual, and energetic dimensions.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Food, Accommodation & Comfort</h4>
+                    <p>Vegetarian, vegan, and gluten-free options available. Meals made with fresh or organic local ingredients. Multiple accommodation choices: private, twin sharing, and private cottage with great views.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-user"></i>
+                    </div>
+                    <h4>Guidance from Experienced Teachers</h4>
+                    <p>Our instructors are well-versed in various yogic traditions. Teachers have practiced from early age, experienced in Hatha, Ashtanga, meditation, and various spiritual disciplines.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Immersive, Transformative Experience</h4>
+                    <p>Our structure is designed for self-inquiry, mental clarity, emotional balance, and spiritual growth. Silent walks, self-study time, and sound healing sessions create a truly transformative journey.</p>
+                </div>
+            </div>
+
+            <div class="why-footer">
+                <p><strong>Reasonable pricing for what's offered.</strong> Given the standard of accommodation, comprehensive program, food quality, and natural setting, many find it excellent value compared to commercial spa-heavy retreats.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2>What Our Guests Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"A Transformational and Heartfelt Yoga Retreat Experience"</p>
+                    <p class="testimonial-author">Satisfied Guest</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"My soulful stay at ATMA JYOTI changed my life and perspective"</p>
+                    <p class="testimonial-author">Yoga Practitioner</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Wonderful stay at ATMA JYOTI with excellent facilities and caring staff"</p>
+                    <p class="testimonial-author">International Guest</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"EXCELLENT 8-days retreat experience with comprehensive spiritual training"</p>
+                    <p class="testimonial-author">Yoga Student</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Rejuvenating retreat in a serene mountain setting with authentic teachings"</p>
+                    <p class="testimonial-author">Wellness Seeker</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Perfect blend of relaxation, learning, and spiritual growth in paradise"</p>
+                    <p class="testimonial-author">Retreat Alumni</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>ATMA JYOTI</h4>
+                <p>Yoga Retreat & Sound Healing Center</p>
+                <p>Pokhara, Nepal</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: <a href="mailto:atmajyotiyogapokhara@gmail.com">atmajyotiyogapokhara@gmail.com</a></p>
+                <p>Phone: <a href="tel:+9779860560395">+977 9860560395</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="sessions.html">Sessions</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="retreats.html">Retreats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mahendrayogic/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/atmajyotiyogapokhara/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ATMA JYOTI Yoga Retreat & Sound Healing Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
