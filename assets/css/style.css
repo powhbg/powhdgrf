@@ -5,16 +5,22 @@
     box-sizing: border-box;
 }
 
+
 :root {
-    --primary-yellow: #ffbd59;
-    --light-yellow: #fcd24f;
-    --nav-dark: #353837;
-    --accent-gold: #1f628e;
+    --primary-yellow: #fcd24f;
+    --yellow-orange: #ffbd59;
+    --brand-blue: #1f628e;
     --white: #ffffff;
+    --black: #000000;
     --light-bg: #f8f9fa;
-    --text-dark: #353837;
+    --text-dark: #000000;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Legacy compatibility - all map to brand colors */
+    --accent-blue: #1f628e;
+    --accent-gold: #1f628e;
+    --nav-dark: #1f628e;
+    --light-yellow: #fcd24f;
 }
 
 html {
@@ -54,12 +60,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     background-color: var(--nav-dark);
     color: var(--white);
-    padding: 1rem 0;
+    padding: 0.8rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    height: auto;
 }
 
 .navbar.sticky {
@@ -198,9 +205,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ==================== HERO SECTION ==================== */
 .hero {
-    margin-top: 60px;
+    margin-top: 0;
     position: relative;
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,13 +216,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .carousel-container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 
 .carousel {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: #000;
@@ -240,6 +251,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
 }
 
 .carousel-controls {
@@ -299,7 +312,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     text-align: center;
     color: var(--white);
-    z-index: 5;
+    z-index: 100;
     width: 100%;
     padding: 0 20px;
 }
@@ -385,7 +398,7 @@ section {
     color: var(--white);
     text-align: center;
     padding: 8rem 2rem 4rem;
-    margin-top: 60px;
+    margin-top: 0;
 }
 
 .page-header h1 {
@@ -499,7 +512,7 @@ section {
 .cta-section {
     text-align: center;
     padding: 3rem;
-    background: linear-gradient(135deg, rgba(45, 90, 61, 0.1), rgba(74, 124, 89, 0.1));
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
     border-radius: 10px;
 }
 
@@ -904,7 +917,7 @@ section {
     right: 30px;
     width: 60px;
     height: 60px;
-    background-color: #25d366;
+    background-color: #1f628e;
     color: var(--white);
     border-radius: 50%;
     display: flex;
@@ -1029,7 +1042,7 @@ section {
 /* ==================== WHY ATMA JYOTI SECTION ==================== */
 .why-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e8f0eb 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f2fd 100%);
 }
 
 .why-section .section-header {
@@ -1130,12 +1143,12 @@ section {
 }
 
 .testimonial-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #eef4f0 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f2fd 100%);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    border-left: 4px solid var(--accent-gold);
+    border-left: 4px solid var(--accent-blue);
 }
 
 .testimonial-photo {
@@ -1427,10 +1440,10 @@ section {
 
 /* <!-- Hero Section with Auto-Sliding Images --> */
 <section class="hero hero-slider">
-    <div class="hero-slide active" style="background-image: linear-gradient(rgba(45, 90, 61, 0.5), rgba(45, 90, 61, 0.5)), url('assets/images/hero1.jpg');"></div>
-    <div class="hero-slide" style="background-image: linear-gradient(rgba(45, 90, 61, 0.5), rgba(45, 90, 61, 0.5)), url('assets/images/hero2.jpg');"></div>
-    <div class="hero-slide" style="background-image: linear-gradient(rgba(45, 90, 61, 0.5), rgba(45, 90, 61, 0.5)), url('assets/images/hero3.jpg');"></div>
-    <div class="hero-slide" style="background-image: linear-gradient(rgba(45, 90, 61, 0.5), rgba(45, 90, 61, 0.5)), url('assets/images/hero4.jpg');"></div>
+    <div class="hero-slide active" style="background-image: linear-gradient(rgba(37, 99, 235, 0.5), rgba(37, 99, 235, 0.5)), url('assets/images/hero1.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(37, 99, 235, 0.5), rgba(37, 99, 235, 0.5)), url('assets/images/hero2.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(37, 99, 235, 0.5), rgba(37, 99, 235, 0.5)), url('assets/images/hero3.jpg');"></div>
+    <div class="hero-slide" style="background-image: linear-gradient(rgba(37, 99, 235, 0.5), rgba(37, 99, 235, 0.5)), url('assets/images/hero4.jpg');"></div>
     
     <div class="hero-overlay">
         <h1 class="fade-in">Welcome to Atma Jyoti</h1>
@@ -1523,7 +1536,7 @@ section {
 /* ==================== HERO SECTION ==================== */
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(45, 90, 61, 0.5), rgba(45, 90, 61, 0.5)), 
+    background-image: linear-gradient(rgba(37, 99, 235, 0.5), rgba(37, 99, 235, 0.5)), 
                       url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
@@ -1873,7 +1886,7 @@ section {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 0.5rem;
-    color: #2d5016;
+    color: var(--accent-blue);
 }
 
 .section-subtitle {
@@ -1922,7 +1935,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(45, 80, 22, 0.9), transparent);
+    background: linear-gradient(to top, rgba(37, 99, 235, 0.9), transparent);
     color: white;
     padding: 1rem;
     transform: translateY(100%);

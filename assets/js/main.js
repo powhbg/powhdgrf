@@ -156,10 +156,10 @@ window.addEventListener('scroll', () => {
     if (navbar) {
         if (window.scrollY > 50) {
             navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
-            navbar.style.backgroundColor = 'rgba(45, 90, 61, 0.95)';
+            navbar.style.backgroundColor = 'rgba(31, 98, 142, 0.95)';
         } else {
             navbar.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
-            navbar.style.backgroundColor = '#2d5a3d';
+            navbar.style.backgroundColor = '#1f628e';
         }
     }
 });
