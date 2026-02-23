@@ -22,7 +22,7 @@ if (contactForm) {
             const whatsappMessage = `Hello! 🙏\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nSubject: ${subject}\n\nMessage:\n${message}`;
             
             // WhatsApp Business Number
-            const whatsappNumber = '9779860560395';
+            const whatsappNumber = '9779713679786';
             const encodedMessage = encodeURIComponent(whatsappMessage);
             const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
             
