@@ -12,7 +12,7 @@
     --brand-blue: #1f628e;
     --white: #ffffff;
     --black: #000000;
-    --light-bg: #f8f9fa;
+    --light-bg: #E0D9D5;
     --text-dark: #000000;
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     background-color: var(--nav-dark);
     color: var(--white);
-    padding: 0.8rem 0;
+    padding: 0.4rem 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -97,15 +97,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-circle {
-    width: 40px;              /* increased from 32px */
-    height: 40px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background-color:transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    flex-shrink: 0;           /* prevents stretching */
+    flex-shrink: 0;
 }
 
 .logo-circle img {
@@ -119,44 +119,52 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) {
     .nav-logo {
         gap: 10px;
-        font-size: 1rem;
+        font-size: 0.85rem;
     }
 
     .logo-circle {
-        width: 48px;
-        height: 48px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .logo-circle {
+        width: 85px;
+        height: 85px;
     }
 }
 
 
 .logo-text {
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    line-height: 1.3;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
     display: inline-block;
 }
 
 @media (min-width: 768px) {
     .logo-text {
-        font-size: 1.3rem;
-        letter-spacing: 0.6px;
+        font-size: 0.95rem;
+        letter-spacing: 0.4px;
     }
 }
 
 @media (min-width: 1024px) {
     .logo-text {
-        font-size: 1.45rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
     }
 }
 
 .nav-menu {
     position: fixed;
-    top: 64px;
+    top: 65px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 64px);
+    height: calc(100vh - 65px);
     background-color: var(--nav-dark);
     display: flex;
     flex-direction: column;
@@ -165,6 +173,20 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2rem;
     transition: left 0.3s ease;
     overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .nav-menu {
+        top: 80px;
+        height: calc(100vh - 80px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-menu {
+        top: 95px;
+        height: calc(100vh - 95px);
+    }
 }
 
 .nav-menu.active {
@@ -461,11 +483,20 @@ section {
 .page-header h1 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
+    text-shadow: 
+        0 0 10px rgba(0, 0, 0, 0.8),
+        3px 3px 6px rgba(0, 0, 0, 0.7),
+        4px 4px 8px rgba(0, 0, 0, 0.6),
+        5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .page-header p {
     font-size: 1.3rem;
-    opacity: 0.9;
+    opacity: 0.95;
+    text-shadow: 
+        0 0 8px rgba(0, 0, 0, 0.8),
+        2px 2px 5px rgba(0, 0, 0, 0.7),
+        3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* ==================== FREE SESSIONS SECTION ==================== */
@@ -1095,7 +1126,7 @@ section {
 /* ==================== WHY ATMA JYOTI SECTION ==================== */
 .why-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e8f2fd 100%);
+    background: linear-gradient(135deg, #E0D9D5 0%, #e8f2fd 100%);
 }
 
 .why-section .section-header {
@@ -1196,7 +1227,7 @@ section {
 }
 
 .testimonial-card {
-    background: linear-gradient(135deg, #f8f9fa 0%, #e8f2fd 100%);
+    background: linear-gradient(135deg, #E0D9D5 0%, #e8f2fd 100%);
     padding: 2rem;
     border-radius: 12px;
     box-shadow: var(--shadow);
@@ -1318,12 +1349,22 @@ section {
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .nav-logo {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        gap: 5px;
+        flex-wrap: nowrap;
+        width: 100%;
     }
 
     .logo-circle {
-        width: 28px;
-        height: 28px;
+        width: 45px;
+        height: 45px;
+        flex-shrink: 0;
+    }
+    
+    .logo-text {
+        font-size: 0.65rem;
+        white-space: normal;
+        word-break: break-word;
     }
 
     .hero-overlay h1 {
@@ -1418,12 +1459,17 @@ section {
     }
 
     .page-header {
-        padding: 6rem 1rem 3rem;
+        padding: 4rem 1rem 2rem;
+        height: 45vh;
     }
 
     .page-header h1 {
-        font-size: 1.8rem;
-    }
+        font-size: 1.6rem;
+        text-shadow: \n        0 0 8px rgba(0, 0, 0, 0.9),\n        2px 2px 5px rgba(0, 0, 0, 0.8),\n        3px 3px 8px rgba(0, 0, 0, 0.7);\n    }
+    
+    .page-header p {
+        font-size: 1rem;
+        text-shadow: \n        0 0 6px rgba(0, 0, 0, 0.9),\n        1px 1px 4px rgba(0, 0, 0, 0.8),\n        2px 2px 6px rgba(0, 0, 0, 0.7);\n    }
 
     section {
         padding: 3rem 0;
@@ -1916,7 +1962,7 @@ section {
 /* ==================== GALLERY SECTION ==================== */
 .gallery-section {
     padding: 5rem 0;
-    background-color: #f5f5f5;
+    background-color: #E0D9D5;
 }
 
 .gallery-section h2 {
